@@ -129,7 +129,9 @@ class WaterCounterViewController: UIViewController {
     private func layout() {
         let buttonSize = CGSize(width: 72, height: 72)
         addCoffeeButton.pin.bottomLeft(20).size(buttonSize)
-        addLiquidButton.pin.bottomCenter(32).size(buttonSize)
+        if state == .initial {
+            addLiquidButton.pin.bottomCenter(32).size(buttonSize)
+        }
         addCoffeeScalingView.pin.center(to: addCoffeeButton.anchor.center).size(buttonSize)
         addPureWaterButton.pin.bottomRight(20).size(buttonSize)
         addPureWaterScalingView.pin.center(to: addPureWaterButton.anchor.center).size(buttonSize)
