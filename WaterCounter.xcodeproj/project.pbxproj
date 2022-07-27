@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0034EE49288D128100716B8A /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034EE48288D128100716B8A /* WaveView.swift */; };
 		00A5BB4B2882C18B00612651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5BB4A2882C18B00612651 /* AppDelegate.swift */; };
-		00A5BB4D2882C18B00612651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5BB4C2882C18B00612651 /* SceneDelegate.swift */; };
-		00A5BB4F2882C18B00612651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5BB4E2882C18B00612651 /* ViewController.swift */; };
-		00A5BB522882C18B00612651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A5BB502882C18B00612651 /* Main.storyboard */; };
+		00A5BB4F2882C18B00612651 /* WaterCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5BB4E2882C18B00612651 /* WaterCounterViewController.swift */; };
 		00A5BB542882C18C00612651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A5BB532882C18C00612651 /* Assets.xcassets */; };
 		00A5BB572882C18C00612651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A5BB552882C18C00612651 /* LaunchScreen.storyboard */; };
+		00A5BB602882C32A00612651 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 00A5BB5F2882C32A00612651 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0034EE48288D128100716B8A /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		00A5BB472882C18B00612651 /* WaterCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A5BB4A2882C18B00612651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00A5BB4C2882C18B00612651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00A5BB4E2882C18B00612651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00A5BB512882C18B00612651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A5BB4E2882C18B00612651 /* WaterCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCounterViewController.swift; sourceTree = "<group>"; };
 		00A5BB532882C18C00612651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A5BB562882C18C00612651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A5BB582882C18C00612651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,12 +30,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A5BB602882C32A00612651 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0034EE47288D127500716B8A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0034EE48288D128100716B8A /* WaveView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		00A5BB3E2882C18B00612651 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +64,9 @@
 		00A5BB492882C18B00612651 /* WaterCounter */ = {
 			isa = PBXGroup;
 			children = (
+				0034EE47288D127500716B8A /* Subviews */,
 				00A5BB4A2882C18B00612651 /* AppDelegate.swift */,
-				00A5BB4C2882C18B00612651 /* SceneDelegate.swift */,
-				00A5BB4E2882C18B00612651 /* ViewController.swift */,
-				00A5BB502882C18B00612651 /* Main.storyboard */,
+				00A5BB4E2882C18B00612651 /* WaterCounterViewController.swift */,
 				00A5BB532882C18C00612651 /* Assets.xcassets */,
 				00A5BB552882C18C00612651 /* LaunchScreen.storyboard */,
 				00A5BB582882C18C00612651 /* Info.plist */,
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = WaterCounter;
+			packageProductDependencies = (
+				00A5BB5F2882C32A00612651 /* PinLayout */,
+			);
 			productName = WaterCounter;
 			productReference = 00A5BB472882C18B00612651 /* WaterCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 00A5BB3E2882C18B00612651;
+			packageReferences = (
+				00A5BB5E2882C32A00612651 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = 00A5BB482882C18B00612651 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +140,6 @@
 			files = (
 				00A5BB572882C18C00612651 /* LaunchScreen.storyboard in Resources */,
 				00A5BB542882C18C00612651 /* Assets.xcassets in Resources */,
-				00A5BB522882C18B00612651 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +150,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A5BB4F2882C18B00612651 /* ViewController.swift in Sources */,
+				00A5BB4F2882C18B00612651 /* WaterCounterViewController.swift in Sources */,
+				0034EE49288D128100716B8A /* WaveView.swift in Sources */,
 				00A5BB4B2882C18B00612651 /* AppDelegate.swift in Sources */,
-				00A5BB4D2882C18B00612651 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00A5BB502882C18B00612651 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00A5BB512882C18B00612651 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00A5BB552882C18C00612651 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +296,6 @@
 				INFOPLIST_FILE = WaterCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = WaterCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00A5BB5E2882C32A00612651 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00A5BB5F2882C32A00612651 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A5BB5E2882C32A00612651 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00A5BB3F2882C18B00612651 /* Project object */;
 }
