@@ -13,6 +13,9 @@
 		00A5BB542882C18C00612651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A5BB532882C18C00612651 /* Assets.xcassets */; };
 		00A5BB572882C18C00612651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A5BB552882C18C00612651 /* LaunchScreen.storyboard */; };
 		00A5BB602882C32A00612651 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 00A5BB5F2882C32A00612651 /* PinLayout */; };
+		00CC86072894E1C200079B2A /* WaterTrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC86062894E1C200079B2A /* WaterTrackingModel.swift */; };
+		00CC860A2894E21C00079B2A /* WaterTrackingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC86092894E21C00079B2A /* WaterTrackingController.swift */; };
+		00CC860C2894E54500079B2A /* WaterCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC860B2894E54500079B2A /* WaterCounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		00A5BB532882C18C00612651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A5BB562882C18C00612651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A5BB582882C18C00612651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CC86062894E1C200079B2A /* WaterTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackingModel.swift; sourceTree = "<group>"; };
+		00CC86092894E21C00079B2A /* WaterTrackingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackingController.swift; sourceTree = "<group>"; };
+		00CC860B2894E54500079B2A /* WaterCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +70,41 @@
 		00A5BB492882C18B00612651 /* WaterCounter */ = {
 			isa = PBXGroup;
 			children = (
-				0034EE47288D127500716B8A /* Subviews */,
 				00A5BB4A2882C18B00612651 /* AppDelegate.swift */,
+				00CC860D2894E81D00079B2A /* Support */,
+				00CC86082894E21100079B2A /* Controllers */,
+				00CC86052894E1AB00079B2A /* Model */,
+				0034EE47288D127500716B8A /* Subviews */,
 				00A5BB4E2882C18B00612651 /* WaterCounterViewController.swift */,
+				00CC860B2894E54500079B2A /* WaterCounterView.swift */,
+			);
+			path = WaterCounter;
+			sourceTree = "<group>";
+		};
+		00CC86052894E1AB00079B2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CC86062894E1C200079B2A /* WaterTrackingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00CC86082894E21100079B2A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00CC86092894E21C00079B2A /* WaterTrackingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00CC860D2894E81D00079B2A /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				00A5BB532882C18C00612651 /* Assets.xcassets */,
 				00A5BB552882C18C00612651 /* LaunchScreen.storyboard */,
 				00A5BB582882C18C00612651 /* Info.plist */,
 			);
-			path = WaterCounter;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A5BB4F2882C18B00612651 /* WaterCounterViewController.swift in Sources */,
+				00CC860C2894E54500079B2A /* WaterCounterView.swift in Sources */,
 				0034EE49288D128100716B8A /* WaveView.swift in Sources */,
+				00CC86072894E1C200079B2A /* WaterTrackingModel.swift in Sources */,
 				00A5BB4B2882C18B00612651 /* AppDelegate.swift in Sources */,
+				00CC860A2894E21C00079B2A /* WaterTrackingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E8W748977J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterCounter/Info.plist;
+				INFOPLIST_FILE = WaterCounter/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -320,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E8W748977J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterCounter/Info.plist;
+				INFOPLIST_FILE = WaterCounter/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

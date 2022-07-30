@@ -25,7 +25,7 @@ class WaveView: UIView {
     var parameterB = 9.0
     var phase = 0.0
     
-    var heightOffset = 0.1
+    var heightOffset = 0.05
     
     var preferredColor = UIColor(red: 116/255, green: 204/255, blue: 244/255, alpha: 0.5)
     var preferredStrokeColor = UIColor(red: 116/255, green: 204/255, blue: 244/255, alpha: 1)
